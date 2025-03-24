@@ -1,10 +1,11 @@
 #include <stdio.h>
 //carta 1
+
 int main(){
     char estado;
     char codigo[20];
     char cidade[20];
-    int população;
+    unsigned long int população;
     float area;
     float Pib;
     int pontos_turisticos;
@@ -14,7 +15,7 @@ int main(){
     char estado2;
     char codigo2[20];
     char cidade2[20];
-    int população2;
+    unsigned long int população2;
     float area2;
     float Pib2;
     int pontos_turisticos2;
@@ -34,8 +35,8 @@ scanf("%s", &cidade);
 printf("a cidade é: %s\n", cidade);
 
 printf("digite a população: ");
-scanf("%d", &população);
-printf("a população é: %d\n", população);
+scanf("%lu", &população);
+printf("a população é: %lu\n", população); 
 
 printf("digite a area: ");
 scanf("%f", &area);
@@ -55,8 +56,14 @@ float pib_per_capita = (float) (Pib / população);
 printf("Densidade: %.2f\n", densidade);
 
 printf("pib per capita: %.2f\n", pib_per_capita);
- 
 
+//Super Poder!!!
+
+unsigned long int soma = (unsigned long int) (população + Pib + area + pontos_turisticos + densidade + pib_per_capita);
+
+printf("a soma é: %lu\n", &soma);
+
+ 
 //carta 2
  
 printf("digite o estado2: ");
@@ -72,8 +79,8 @@ scanf("%s", &cidade2);
 printf("a cidade2 é: %s\n", cidade2);
 
 printf("digite a população2: ");
-scanf("%d", &população2);
-printf("a população é: %d\n", população2);
+scanf("%lu", &população2);
+printf("a população é: %lu\n", população2);
 
 printf("digite a area2: ");
 scanf("%f", &area2);
@@ -94,10 +101,110 @@ printf("Densidade: %.2f\n", densidade2);
 
 printf("pib per capita: %.2f\n", pib_per_capita2);
 
+//Super Poder!!!
 
-return 0;
-}
+unsigned long int soma2 = (unsigned long int) (população2 + Pib2 + area2 + pontos_turisticos2 + densidade2 + pib_per_capita2);
+
+printf("a soma é: %lu\n", &soma2);
+
+//comparação carta 1 e carta 2
+
+    if(população < população2){
+
+    printf("população de carta 1 venceu\n");
+
+}else 
     
-     
-  
+    if(população > população2){
+    
+     printf("população2 de Carta 2 venceu\n");
+    
+}else{
+    
+    printf("Empate\n");
+    
+    }
+    
+    if(area < area2){
+    
+     printf("area de Carta 1 venceu\n");
+    
+}else 
+        
+    if(area > area2){
+      
+     printf("area2 de Carta 2 venceu\n");
+    
+}else{
+    
+     printf("Empate\n");
+    
+        }
+    
+    if(Pib < Pib2){
+    
+     printf("Pib de Carta 1 venceu\n");
+    
+}else 
+            
+    if(Pib2 > Pib2){
+          
+     printf("Pib2 de Carta 2 venceu\n");
+        
+}else{
+        
+     printf("Empate\n");
+    
+}
+
+    if(pontos_turisticos < pontos_turisticos2){
+    
+     printf("pontos turisticos de Carta 1 venceu\n");
+            
+ }else
+                
+    if(pontos_turisticos > pontos_turisticos2){
+              
+     printf("pontos turisticos2 de Carta 2 venceu\n");
+            
+}else{
+            
+     printf("Empate\n");
+
+}
+            
+    if(densidade < densidade2){
+    
+     printf("densidade de Carta 1 venceu\n");
+                
+ }else 
+                    
+    if(densidade > densidade2){
+                  
+     printf("densidade2 de Carta 2 venceu\n");
+                
+ }else{
+                
+     printf("Empate\n");
  
+ }   
+
+    if(pib_per_capita < pib_per_capita2){
+    
+     printf("pib per capita de Carta 1 venceu\n");
+                
+ }else 
+                    
+    if(pib_per_capita > pib_per_capita2){
+                  
+     printf("pib per capita2 de Carta 2 venceu\n");
+                
+ }else{
+                
+     printf("Empate\n");
+
+ }
+     
+     return 0;
+
+}
