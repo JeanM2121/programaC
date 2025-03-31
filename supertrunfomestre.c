@@ -63,8 +63,7 @@ unsigned long int soma = (unsigned long int) (populacao + Pib + area + pontos_tu
 
 printf("a soma é: %lu\n", &soma);
 
- 
-//carta 2
+ //carta 2
  
 printf("digite o estado2: ");
 scanf("%c", &estado2);
@@ -109,13 +108,13 @@ printf("a soma é: %lu\n", &soma2);
 
 //comparação carta 1 e carta 2
 
-    if(populacao < populacao2){
+    if(populacao > populacao2){
 
     printf("populacao de carta 1 venceu\n");
 
 }else 
     
-    if(populacao > populacao2){
+    if(populacao < populacao2){
     
      printf("populacao2 de Carta 2 venceu\n");
     
@@ -125,13 +124,13 @@ printf("a soma é: %lu\n", &soma2);
     
     }
     
-    if(area < area2){
+    if(area > area2){
     
      printf("area de Carta 1 venceu\n");
     
 }else 
         
-    if(area > area2){
+    if(area < area2){
       
      printf("area2 de Carta 2 venceu\n");
     
@@ -141,13 +140,13 @@ printf("a soma é: %lu\n", &soma2);
     
         }
     
-    if(Pib < Pib2){
+    if(Pib > Pib2){
     
      printf("Pib de Carta 1 venceu\n");
     
 }else 
             
-    if(Pib2 > Pib2){
+    if(Pib < Pib2){
           
      printf("Pib2 de Carta 2 venceu\n");
         
@@ -157,13 +156,13 @@ printf("a soma é: %lu\n", &soma2);
     
 }
 
-    if(pontos_turisticos < pontos_turisticos2){
+    if(pontos_turisticos > pontos_turisticos2){
     
      printf("pontos turisticos de Carta 1 venceu\n");
             
  }else
                 
-    if(pontos_turisticos > pontos_turisticos2){
+    if(pontos_turisticos < pontos_turisticos2){
               
      printf("pontos turisticos2 de Carta 2 venceu\n");
             
@@ -189,13 +188,13 @@ printf("a soma é: %lu\n", &soma2);
  
  }   
 
-    if(pib_per_capita < pib_per_capita2){
+    if(pib_per_capita > pib_per_capita2){
     
      printf("pib per capita de Carta 1 venceu\n");
                 
  }else 
                     
-    if(pib_per_capita > pib_per_capita2){
+    if(pib_per_capita < pib_per_capita2){
                   
      printf("pib per capita2 de Carta 2 venceu\n");
                 
