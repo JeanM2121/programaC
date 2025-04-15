@@ -107,101 +107,13 @@ int main() {
 
     //comparação carta 1 e carta 2
 
-    if(população > população2){
+    printf("População: %f\n", população > população2);
+    printf("Área Total: %f\n", area > area2);
+    printf("PIB: %f\n", Pib > Pib2);
+    printf("Pontos Turísticos: %d\n", pontos_turisticos > pontos_turisticos2);
+    printf("Densidade Populacional: %f\n", densidade < densidade2);
+    printf("PIB per Capita: %f\n", pib_per_capita > pib_per_capita2);
+    printf("Super-Poder: %f", superpoder > superpoder2);
 
-        printf("população de carta 1 venceu\n");
-    
-    }else 
-        
-        if(população < população2){
-        
-         printf("população2 de Carta 2 venceu\n");
-        
-    }else{
-        
-        printf("Empate\n");
-        
-        }
-        
-        if(area > area2){
-        
-         printf("area de Carta 1 venceu\n");
-        
-    }else 
-            
-        if(area < area2){
-          
-         printf("area2 de Carta 2 venceu\n");
-        
-    }else{
-        
-         printf("Empate\n");
-        
-            }
-        
-        if(Pib > Pib2){
-        
-         printf("Pib de Carta 1 venceu\n");
-        
-    }else 
-                
-        if(Pib < Pib2){
-              
-         printf("Pib2 de Carta 2 venceu\n");
-            
-    }else{
-            
-         printf("Empate\n");
-        
-    }
-    
-        if(pontos_turisticos > pontos_turisticos2){
-        
-         printf("pontos turisticos de Carta 1 venceu\n");
-                
-     }else
-                    
-        if(pontos_turisticos < pontos_turisticos2){
-                  
-         printf("pontos turisticos2 de Carta 2 venceu\n");
-                
-    }else{
-                
-         printf("Empate\n");
-    
-    }
-                
-        if(densidade < densidade2){
-        
-         printf("densidade de Carta 1 venceu\n");
-                    
-     }else 
-                        
-        if(densidade > densidade2){
-                      
-         printf("densidade2 de Carta 2 venceu\n");
-                    
-     }else{
-                    
-         printf("Empate\n");
-     
-     }   
-    
-        if(pib_per_capita > pib_per_capita2){
-        
-         printf("pib per capita de Carta 1 venceu\n");
-                    
-     }else 
-                        
-        if(pib_per_capita < pib_per_capita2){
-                      
-         printf("pib per capita2 de Carta 2 venceu\n");
-                    
-     }else{
-                    
-         printf("Empate\n");
-    
-     }
-
- return 0;
+    return 0;
 }
