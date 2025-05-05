@@ -1,29 +1,32 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <ctype.h> 
+
  
  int main(){
       //carta 1
-    
-    char estado;
+    char opcaomenu;
+    char nomedojogador[30];
     char codigo[20];
     char pais1[20];
     long int populacao1;
     float area1;
     float pib;
     int pontosturisticos;
-    float densidade;
-    float pibpercapita;
+    float densidadepopulacional1;
+    float pibpercapita1;
     
 
      //carta 2
     
-     char estado2;
      char codigo2[20];
      char pais2[20];
      int populacao2;
      float area2;
      float pib2;
-     int pontos_turisticos2;
-     float densidade2;
+     int pontosturisticos2;
+     float densidadepopulacional2;
      float pibpercapita2;
      
 
@@ -32,7 +35,7 @@
      scanf("%s", &nomedojogador);
      printf("Seja Bem Vindo, %s!\n", nomedojogador);
  
-     printf("Digite o nome da cidade: \n");
+     printf("Digite o nome do pais: \n");
      scanf("%s", pais1);
  
      printf("Digite a população desse país: \n");
@@ -129,7 +132,7 @@
             }
         }else if (opcaomenu ==2){
             if (area1 > area2){
-                printf(" O pais %s GANHOU ",pais,area1,pais2,area2);
+                printf(" O pais %s GANHOU ",pais1,area1,pais2,area2);
             }else if (area1 < area2){
                 printf(" O pais %s GANHOU ",pais2,area2,pais1,area1);
             }else{
@@ -137,9 +140,9 @@
             }
         }else if (opcaomenu ==3){
             if (pib > pib2){
-                printf(" O pais %s GANHOU ",pais1,pib,cidade2,pib2);
+                printf(" O pais %s GANHOU ",pais1,pib,pais2,pib2);
             }else if (pib < pib2){
-                printf(" O pais %s GANHOU ",pais2,pib2,cidade1,pib);
+                printf(" O pais %s GANHOU ",pais2,pib2,pais1,pib);
             }else{
                 printf(" Os dois países tem o mesmo PIB de %.2f ", pib);
             }
@@ -153,7 +156,7 @@
             }
         }else if (opcaomenu ==5){
             if (densidadepopulacional1 < densidadepopulacional2){
-                printf(" O pais %s GANHOU ",pais1,densidadepopulacional1,pais,densidadepopulacional2);
+                printf(" O pais %s GANHOU ",pais1,densidadepopulacional1,pais1,densidadepopulacional2);
             }else if (densidadepopulacional1 < densidadepopulacional2){
                 printf(" O pais %s GANHOU ",pais2,densidadepopulacional2,pais1,densidadepopulacional1);
             }else{
@@ -175,17 +178,3 @@
    
       
   }
-   
-   
-   
-   
-   
-   
-   
-    
-   
-   
-   
-   
-   
-   
