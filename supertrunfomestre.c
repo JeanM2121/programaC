@@ -29,7 +29,7 @@ int main() {
 
     //carta 1
 
-    printf(" carta 1: ");
+    printf(" carta 1: \n");
 
     printf("digite o estado: ");
     scanf(" %c", &estado);
@@ -69,7 +69,7 @@ int main() {
     printf("o superpoder é: %lu\n", &superpoder);
     
     //carta 2
-    printf(" carta 2: ");
+    printf(" carta 2: \n");
 
     printf("digite o estado2: ");
     scanf(" %c", &estado2);
