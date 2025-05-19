@@ -10,7 +10,7 @@
     char nomedojogador[30];
     char codigo[20];
     char pais1[20];
-    long int populacao1;
+    unsigned long int populacao1;
     float area1;
     float pib;
     int pontosturisticos;
@@ -23,7 +23,7 @@
     
      char codigo2[20];
      char pais2[20];
-     long int populacao2;
+     unsigned long int populacao2;
      float area2;
      float pib2;
      int pontosturisticos2;
