@@ -23,7 +23,7 @@
     
      char codigo2[20];
      char pais2[20];
-     int populacao2;
+     long int populacao2;
      float area2;
      float pib2;
      int pontosturisticos2;
