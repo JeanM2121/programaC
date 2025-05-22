@@ -95,7 +95,7 @@
      printf("Números de Pontos Turísticos : %d \n", pontosturisticos);
      printf("Densidade Demográfica : %.2f \n", densidadepopulacional1);
      printf("PIB per capita : %.2f \n ", pibpercapita1);
-     printf("soma dos atributos é : %2f \n ", somadosatributos);
+     printf("soma dos atributos é : %.2f \n ", somadosatributos);
      
  
      printf("\n");
