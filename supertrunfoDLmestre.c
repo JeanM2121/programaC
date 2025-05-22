@@ -5,7 +5,9 @@
 
  
  int main(){
-      //carta 1
+      
+    //carta 1
+    
     char opcaomenu;
     char nomedojogador[30];
     char codigo[20];
@@ -18,18 +20,17 @@
     float pibpercapita1;
    float somadosatributos;
     
-
      //carta 2
-    
-     char codigo2[20];
-     char pais2[20];
-     unsigned long int populacao2;
-     float area2;
-     float pib2;
-     int pontosturisticos2;
-     float densidadepopulacional2;
-     float pibpercapita2;
-     float somadosatributos2;
+     
+    char codigo2[20];
+    char pais2[20];
+    unsigned long int populacao2;
+    float area2;
+    float pib2;
+    int pontosturisticos2;
+    float densidadepopulacional2;
+    float pibpercapita2;
+    float somadosatributos2;
      
 // inicio do jogo
      printf("Seja Bem Vindo ao Super Trunfo! \n");
@@ -51,7 +52,8 @@
  
      printf("Digite o numero de pontos turisticos: \n");
      scanf("%d", &pontosturisticos);
-  // calculo da desindade e da soma dos produtos;
+  
+  //calculo da densidade, pib per capita e soma dos produtos;
  
      densidadepopulacional1 = (float)populacao1 / area1;
      pibpercapita1 = (pib * 1000000000) / (float)populacao1;
@@ -74,7 +76,8 @@
  
      printf("Digite o numero de pontos turisticos: \n");
      scanf("%d", &pontosturisticos2);
- // calculo da desindade e da soma dos produtos;
+ 
+  //calculo da densidade, pib per carpita e soma dos produtos
      
      densidadepopulacional2 = (float)populacao2 / area2;
      pibpercapita2 = (pib2 * 1000000000) / (float)populacao2;
@@ -110,7 +113,7 @@
  
      printf("\n");
      printf("\n");
- // menu interativo
+ //Menu interativo;
      printf("## MENU INTERATIVO DE COMPARAÇÃO ##\n");
      printf("Escolha o atributo que deseja comparar: \n");
      printf("1 - População \n");
@@ -122,8 +125,8 @@
      printf(" Digite a opção desejada:%d", opcaomenu);
      scanf("%d", &opcaomenu);
 
-  //comparação dos valores;
-     if (opcaomenu ==1){
+  //Todas as opções de comparação do 1 ao 6;
+      if (opcaomenu ==1){
          if (populacao1 > populacao2){
              printf(" O pais %s GANHOU ",pais1,populacao1,pais2,populacao2);
          }else if (populacao1 < populacao2){
@@ -181,8 +184,7 @@
                 printf(" Os dois países tem a mesma densidade populacional de %.2f ", somadosatributos);
             }
 
-        
-        }else{
+       }else{
             printf(" Opção inválida! \n");
             printf(" Você digitou a opção %d, mas as opções válidas são de 1 a 6. \n", opcaomenu);
             printf(" Por favor, digite uma opção válida. \n");
