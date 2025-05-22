@@ -122,11 +122,12 @@
      printf("4 - Número de Pontos Turísticos \n");
      printf("5 - Densidade Populacional \n");
      printf("6 - soma dos atributos \n");
-     printf(" Digite a opção desejada:%d", opcaomenu);
+     printf(" Digite a opção desejada: %d", opcaomenu);
      scanf("%d", &opcaomenu);
 
   //Todas as opções de comparação do 1 ao 6;
-      if (opcaomenu ==1){
+        
+     if (opcaomenu == 1){
          if (populacao1 > populacao2){
              printf(" O pais %s GANHOU ",pais1,populacao1,pais2,populacao2);
          }else if (populacao1 < populacao2){
@@ -134,14 +135,6 @@
          }else{
              printf(" Os dois países tem a mesma população de %d ", populacao1);
          }
-         if (opcaomenu ==1){
-            if (populacao1 > populacao2){
-                printf(" O pais %s GANHOU ",pais1,populacao1,pais2,populacao2);
-            }else if (populacao1 < populacao2){
-                printf(" O pais %s GANHOU ",pais2,populacao2,pais1,populacao1);
-            }else{
-                printf(" Os dois países tem a mesma população de %d ", populacao1);
-            }
         }else if (opcaomenu ==2){
             if (area1 > area2){
                 printf(" O pais %s GANHOU ",pais1,area1,pais2,area2);
@@ -190,13 +183,8 @@
             printf(" Por favor, digite uma opção válida. \n");
             printf(" Jogo encerrado!, %s! \n", nomedojogador);
     
-    
-    
-        return 0;
     }
+
+
+    return 0;
         }
-   
-   
-   
-      
-  }
