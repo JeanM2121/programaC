@@ -64,7 +64,7 @@ int main() {
     printf("pib per capita: %.2f\n", pib_per_capita);
 
     superpoder = (float) população + Pib + area + pontos_turisticos + densidade + pib_per_capita;
-    printf("o superpoder é: %lu\n", &superpoder);
+    printf("o superpoder é: %.2f\n", &superpoder);
     
     //carta 2
     
